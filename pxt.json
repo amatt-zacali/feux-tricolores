@@ -1,10 +1,11 @@
 {
-    "name": "Feux tricolores",
+    "name": "FeuxC1",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.7.3"
     },
     "files": [
         "main.blocks",
