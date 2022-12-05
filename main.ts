@@ -24,11 +24,11 @@ function FeuO () {
 }
 let strip: neopixel.Strip = null
 strip = neopixel.create(DigitalPin.P0, 1, NeoPixelMode.RGB)
-let range = strip.range(0, 3)
-strip.setBrightness(32)
+strip = strip.range(0, 4)
 strip.shift(0)
+strip.setBrightness(32)
 basic.forever(function () {
-    while (true) {
+    for (let index = 0; index < 99; index++) {
         FeuV()
         basic.pause(10000)
         FeuO()
